@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "androidwsl": "/home/henriquelaki/bin/adb_exports.sh && react-native run-android --deviceId ${ANDROID_DEVICE}",
     "ios": "react-native run-ios",
     "start": "react-native start",
+    "startwsl": "/home/henriquelaki/bin/adb_env.sh &&  react-native start  --host 0.0.0.0",
     "test": "jest",
     "lint": "eslint ."
   },
